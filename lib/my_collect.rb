@@ -9,6 +9,7 @@ def my_collect(arr)
     end
     n += 1 
   end
+  puts arr2
   arr2
 end
 
