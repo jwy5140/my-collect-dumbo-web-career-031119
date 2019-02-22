@@ -3,13 +3,12 @@ def my_collect(arr)
   arr2 = Array.new
   while n < arr.length do
     if (arr[n].include?(" "))
-      arr2.push(((yield arr[n]).split(" ")).first)
+      arr2.push(yield (arr[n].split(" ")).first)
     elsif (!arr.empty?)
       arr2.push(((yield arr[n]).upcase))
     end
     n += 1 
   end
-  puts arr2
   arr2
 end
 
