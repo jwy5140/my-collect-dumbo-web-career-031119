@@ -5,7 +5,7 @@ def my_collect(arr)
     if (arr[n].include?(" "))
       arr2.push(yield (arr[n].split(" ")).first)
     elsif (!arr.empty?)
-      arr2.push(((yield arr[n]).upcase))
+      arr2.push(yield arr[n].upcase)
     end
     n += 1 
   end
