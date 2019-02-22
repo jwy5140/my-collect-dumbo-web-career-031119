@@ -7,6 +7,5 @@ def my_collect(arr)
   arr 
 end
 
-my_collect(x) {|x| x.split(" ").first}
-
+my_collect {|x| x.split(" ").first}
 
