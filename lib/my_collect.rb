@@ -1,7 +1,7 @@
 def my_collect(arr)
   n = 0 
   while n < arr.length do
-    yield arr[n]
+    yield arr[n].upcase.split(" ").first
     n += 1 
   end
   arr 
